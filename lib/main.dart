@@ -32,7 +32,6 @@ class _SimpleWidgetState extends State<SimpleWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      //it's better to use an arrow function, not an usual, in order to execute only when it called, not every time program runs
       onTap: () => {randomColor(), ++counter},
       child: Container(
         alignment: Alignment.center,
